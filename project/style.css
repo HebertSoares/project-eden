@@ -1,50 +1,60 @@
 /* Configuração padrão da página
 ----------------------------------*/
-*{
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    line-height: 36px;
+*{   
+    
     margin: 0;
     padding: 0;
 }
 body, html{
     margin: 0;
-    font: 16px "Lato", sans-serif;
-    color: #777;
+    font: 16px "Lato", sans-serif;    
     height: 100%;
 }
-#menu{
+.rodape p {
+    font-family: "Poppins", sans-serif;
+    line-height: 36px;
+    padding-bottom: 20px;
+}
+#menu{   
     text-align: center;
     width: 100%;
     
 }
 #menu p{
+    text-align: center;
     padding: 0px;
     color: white;
     background-color: #93b6c7;
     letter-spacing: 2px;
 }
-.conteudo {
-    color: #777;
-    background-color: white;
-    text-align: justify;
-    padding: 50px 80px;
+#menu img{
+    width: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
 }
+#navegacao{
+    
+    width: 920px;
+    margin: 0 auto;
+    
+}
+
 h3 {
     text-transform: uppercase;
     color: #111;
     text-align: center;
 }
-p{
-    margin-bottom: 20px;
-}
+
 /********************
 Configurando links*/
 a {
+   
     text-decoration: none;    
 }
 ul {      
     
+    text-align: center;
     margin: 0;
     padding: 0;    
     float:left;
@@ -55,12 +65,19 @@ ul li{
     float: left;
 }
 ul a {
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
     text-align: center;
-    padding: 0 1em;
+    padding: 0 0.5em;
     display: block;
-    line-height: 2em;
+    line-height: 1em;
     color: black;
+    
 }
+ul a:hover{    
+    border-bottom: 1px solid;
+}
+
 
 /*Efeito Parallax
 ----------------------*/
@@ -72,21 +89,56 @@ ul a {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 .caixa1 {
+    
     background-image: url(/imagens/imagem1.jpg);
 }
 .caixa2{
+    
     background-image: url(/imagens/imagem2.jpg);
 }
 .caixa3 {
+    
     background-image: url(/imagens/imagem3.jpg);
 }
-.caixa4{
+.caixa4{    
     background-image: url(/imagens/imagem4.jpg);
 }
 /***********
 botão na imagem 1*/
+.conteudo {
+    margin: 0 auto;
+    color: #9E9F9E;
+    background-color: #E9EBE9;      
+    text-align: justify;
+    padding: 50px 80px;
+    width: 50%;
+}
+.conteudo h1{
+    text-align: center;
+}
+.conteudo p{
+    text-align: center;
+}
+.conteudo-imagem{
+    text-align: center;
+    position: relative;      
+    width: 100%;
+    opacity: 0.7;
+    
+}
+.conteudo-selo{
+    margin-top: 50px;
+    text-align: center;
+    position: relative;      
+    width: 100%;
+    background-color: #fff;    
+    
+}
+
 .conteudo-titulo {
     position: absolute;
     left: 0;
@@ -94,6 +146,7 @@ botão na imagem 1*/
     width: 100%;    
     text-align: center;
 }
+
 .conteudo-titulo span.titulo{
     color: #fff;
     background-color: #111;
